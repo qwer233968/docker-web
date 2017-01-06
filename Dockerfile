@@ -1,4 +1,4 @@
-FROM docker.io/maven:baadc9c8b0ce
+FROM j2ee/base-tomcat-maven:latest
 
 ADD pom.xml /tmp/build/
 RUN cd /tmp/build && mvn -q dependency:resolve
